@@ -40,8 +40,8 @@ Specific content used in the modern site:
 
 - Kennel/business name: Kennel Fidel.
 - Archive tagline/highlight: "Kennel Fidel - 118 Champions".
-- Operators: Eva Nygaard and Gro Staurheim.
-- Background: Eva Nygaard had been active with poodles for over 50 years through breeding, shows and grooming; Gro Staurheim had been involved with the poodles for 34 years.
+- Operators: Eva Nygård and Gro Staurheim.
+- Background: Eva Nygård had been active with poodles for over 50 years through breeding, shows and grooming; Gro Staurheim had been involved with the poodles for 34 years.
 - Contact channels from archive: `fidelpuddel@gmail.com`, `997 41 311`, `grstau@online.no`, `952 82 035`.
 - Last archived litter: medium poodles born 21.03.2023, one black female and two apricot males, after NUCH Fidel Arizona and Tixobambixo's Helmer of Ther-Lia.
 - Puppy philosophy: sell to suitable homes that meet poodle exercise and grooming needs; breeder helps with grooming, clipping and show guidance; puppies were described as health checked, environmentally trained and used to car trips in a crate.
@@ -102,7 +102,7 @@ Completed local gates:
 - Local HTTP server returned `200 OK` from `http://127.0.0.1:8877/`.
 - Browser screenshots captured at desktop and mobile sizes.
 - Screenshot inspection checked for blank page, clipped text, overlapping text and broken layout.
-- Rendered-text sanity check should confirm the blog-style surface text such as `Kennel Fidel`, `Utvalgte innlegg`, `Fidel Face Of A Devil`, and `Kontaktpunkter fra offentlig arkiv`.
+- Rendered-text sanity check should confirm the blog-style surface text such as `Kennel Fidel`, `Utvalgte innlegg`, `Fidel Face Of A Devil`, and `Kontakt`.
 
 Limitations:
 

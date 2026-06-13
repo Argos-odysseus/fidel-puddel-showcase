@@ -180,8 +180,9 @@ figure {
   min-height: calc(100vh - 74px);
   padding: clamp(2.6rem, 6vw, 5.4rem) 0 2.2rem;
   background:
-    linear-gradient(90deg, rgba(23, 19, 17, 0.9), rgba(23, 19, 17, 0.76) 48%, rgba(33, 79, 62, 0.2)),
-    url("assets/photos/archive-dog-04.jpg") center right / min(56vw, 760px) auto no-repeat,
+    linear-gradient(90deg, rgba(255, 253, 245, 0.035) 1px, transparent 1px) 0 0 / 42px 42px,
+    linear-gradient(rgba(255, 253, 245, 0.035) 1px, transparent 1px) 0 0 / 42px 42px,
+    linear-gradient(112deg, rgba(23, 19, 17, 0.98), rgba(23, 19, 17, 0.92) 54%, rgba(33, 79, 62, 0.72)),
     var(--coal);
   color: var(--chalk);
 }
@@ -424,7 +425,7 @@ h3 {
 
 .hero-collage {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.62fr);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.72fr);
   gap: 0.75rem;
   padding: 0.8rem;
   border: 1px solid rgba(255, 253, 245, 0.22);
@@ -489,6 +490,7 @@ h3 {
 }
 
 .latest-card {
+  grid-column: 1 / -1;
   align-self: end;
   border-left: 8px solid var(--gold);
   background: var(--paper-2);
@@ -1010,8 +1012,9 @@ h3 {
 @media (max-width: 1080px) {
   .hero {
     background:
-      linear-gradient(90deg, rgba(23, 19, 17, 0.92), rgba(23, 19, 17, 0.82)),
-      url("assets/photos/archive-dog-04.jpg") center right / cover no-repeat,
+      linear-gradient(90deg, rgba(255, 253, 245, 0.035) 1px, transparent 1px) 0 0 / 42px 42px,
+      linear-gradient(rgba(255, 253, 245, 0.035) 1px, transparent 1px) 0 0 / 42px 42px,
+      linear-gradient(112deg, rgba(23, 19, 17, 0.98), rgba(23, 19, 17, 0.92) 54%, rgba(33, 79, 62, 0.72)),
       var(--coal);
   }
 

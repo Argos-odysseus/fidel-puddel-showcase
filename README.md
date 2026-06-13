@@ -48,9 +48,15 @@ Specific content used in the modern site:
 - Dog examples: Fidel Face Of A Devil "Bowie", Fidella Starface "Karri", Tixobambixo Khamfer Of El-Zanz, Fidel Zanzibar, Fidel Arizona, Fidel Winona.
 - Results/highlights: Toy of the Year 2018/2019/2020, Crufts qualification, BOB/BIS/SAR references, and extensive champion history.
 
-## Asset limitations
+## Recovered assets and limitations
 
-The archive listed many image URLs, including One.com `____impro/1/onewebmedia/...` images. Direct binary retrieval from Wayback was unreliable in this session: image downloads repeatedly returned timeouts, 404s, or Wayback HTML wrappers instead of usable image bytes. Because of that, the published static site uses restrained image placeholders and documents that real archived or current photos should replace them before production use.
+The archive listed many image URLs, including One.com `____impro/1/onewebmedia/...` images. Three usable archived dog/show photos were recovered and are used in the page:
+
+- `assets/photos/archive-dog-02.jpg`
+- `assets/photos/archive-dog-03.jpg`
+- `assets/photos/archive-dog-04.jpg`
+
+One larger archived image partially downloaded as corrupt/gray content and is not included in the published repo. Many other images were present in CDX but were not practical to recover within this bounded run because Wayback binary retrieval was slow and intermittently returned timeouts or partial content.
 
 No missing data has been fabricated. Where data may be outdated, the page labels it as archived.
 
@@ -81,7 +87,7 @@ Design implications:
 - Original dog pages -> scannable dog cards with sourced facts.
 - Original champion/show result pages -> compact timeline and highlights.
 - Original contact form/guestbook -> static contact cards and documented limitation.
-- Original image-heavy pages -> placeholder treatment due Wayback asset retrieval failures.
+- Original image-heavy pages -> three recovered archived photos plus placeholders where image recovery failed.
 
 ## Verification
 
@@ -89,6 +95,7 @@ Completed local gates:
 
 - HTML parsed with Python `html.parser`.
 - Local link and asset references checked from `index.html`.
+- Recovered image bytes checked with `file`; three usable JPEGs are referenced by the page.
 - `git diff --check -- fidel-puddel-showcase` passed.
 - Local HTTP server returned `200 OK` from `http://127.0.0.1:8877/`.
 - Playwright screenshots captured at `1440x1100` and `390x1200`.
@@ -98,4 +105,4 @@ Completed local gates:
 Limitations:
 
 - The local system `tidy` binary is too old for HTML5 semantic tags and reports false errors for `header`, `nav`, `main` and `section`.
-- Wayback image binaries could not be cached reliably during this session; placeholders are intentional.
+- Wayback image binaries were only partially recoverable; three generic archive photos are used, and unmatched dog cards keep placeholders.

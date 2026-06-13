@@ -1,0 +1,117 @@
+backend:
+  name: github
+  repo: Argos-odysseus/fidel-puddel-showcase
+  branch: main
+
+local_backend: true
+
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+collections:
+  - name: site
+    label: Nettsted
+    delete: false
+    files:
+      - file: content/site.json
+        name: settings
+        label: Forside og kontakt
+        format: json
+        fields:
+          - { label: Kennelnavn, name: siteName, widget: string }
+          - { label: Undertittel, name: siteTagline, widget: string }
+          - { label: Hovedtittel, name: heroTitle, widget: string }
+          - { label: Intro, name: heroLead, widget: text }
+          - { label: Tjenesteintro, name: servicesIntro, widget: text }
+          - { label: Valpeintro, name: puppiesIntro, widget: text }
+          - { label: Resultatintro, name: meritsIntro, widget: text }
+          - { label: Utstillingsintro, name: showsIntro, widget: text }
+          - { label: Om-intro, name: aboutIntro, widget: text }
+          - { label: Kontaktintro, name: contactIntro, widget: text }
+          - label: Kontaktpersoner
+            name: contacts
+            widget: list
+            fields:
+              - { label: Navn, name: name, widget: string }
+              - { label: Rolle, name: role, widget: string, required: false }
+              - { label: Sted, name: location, widget: string }
+              - { label: E-post, name: email, widget: string }
+              - { label: Telefon, name: phone, widget: string }
+
+  - name: dogs
+    label: Hunder
+    label_singular: Hund
+    folder: content/dogs
+    create: true
+    format: json
+    extension: json
+    identifier_field: name
+    slug: "{{slug}}"
+    fields:
+      - { label: Navn, name: name, widget: string }
+      - { label: Kallenavn, name: nickname, widget: string, required: false }
+      - { label: Klasse, name: category, widget: string }
+      - { label: Beskrivelse, name: summary, widget: text }
+      - { label: Bilde, name: image, widget: image, required: false }
+      - label: Høydepunkter
+        name: highlights
+        widget: list
+        required: false
+        field: { label: Punkt, name: item, widget: string }
+
+  - name: litters
+    label: Kull
+    label_singular: Kull
+    folder: content/litters
+    create: true
+    format: json
+    extension: json
+    identifier_field: title
+    slug: "{{slug}}"
+    fields:
+      - { label: Tittel, name: title, widget: string }
+      - { label: Status, name: status, widget: select, options: [Planlagt, Født, Reservert, Avsluttet] }
+      - { label: Født / forventet dato, name: date, widget: string }
+      - { label: Mor, name: dam, widget: string }
+      - { label: Far, name: sire, widget: string }
+      - { label: Kort tekst, name: summary, widget: text }
+      - label: Nøkkelpunkter
+        name: notes
+        widget: list
+        required: false
+        field: { label: Punkt, name: item, widget: string }
+
+  - name: shows
+    label: Utstillinger
+    label_singular: Utstilling
+    folder: content/shows
+    create: true
+    format: json
+    extension: json
+    identifier_field: title
+    slug: "{{slug}}"
+    fields:
+      - { label: Arrangement, name: title, widget: string }
+      - { label: Arrangør, name: organizer, widget: string }
+      - { label: Dato, name: date, widget: string }
+      - { label: Sted, name: location, widget: string, required: false }
+      - { label: Beskrivelse, name: summary, widget: text }
+      - label: Resultater / notater
+        name: highlights
+        widget: list
+        required: false
+        field: { label: Punkt, name: item, widget: string }
+
+  - name: services
+    label: Tjenester
+    label_singular: Tjeneste
+    folder: content/services
+    create: true
+    format: json
+    extension: json
+    identifier_field: title
+    slug: "{{slug}}"
+    fields:
+      - { label: Tittel, name: title, widget: string }
+      - { label: Kort etikett, name: label, widget: string }
+      - { label: Beskrivelse, name: summary, widget: text }

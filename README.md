@@ -1,8 +1,25 @@
 # Kennel Fidel static showcase
 
-Modernized static kennel/blog concept for Kennel Fidel, rebuilt from the public Wayback Machine snapshot of `fidel-puddel.net`.
+Modernized static kennel/business showcase for Kennel Fidel, rebuilt from the public Wayback Machine snapshot of `fidel-puddel.net`.
 
 Live site: https://argos-odysseus.github.io/fidel-puddel-showcase/
+
+## CMS scaffold
+
+The repo now includes a lightweight Decap CMS scaffold under `admin/` plus editable JSON content under `content/`.
+
+- `content/site.json` holds homepage and contact copy.
+- `content/dogs/` holds dog profiles.
+- `content/litters/` holds active, planned, and historical litters.
+- `content/shows/` holds dog show appearances and result notes.
+- `content/services/` holds the kennel's service categories.
+
+This is intentionally a scaffold, not a fake promise. The public homepage is still hand-authored in `index.html`, but the repo is now structured so the next step can be a real content-driven frontend instead of more hardcoded HTML.
+
+Production note:
+
+- `admin/config.yml` is set up for GitHub-backed editing of `Argos-odysseus/fidel-puddel-showcase`.
+- To use `/admin/` on a live GitHub Pages site, the project still needs a working auth path for Decap CMS. `local_backend: true` is included for local editing during development.
 
 Archive source:
 

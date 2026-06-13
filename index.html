@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kennel Fidel | Nyheter, hunder og valpeinfo</title>
-    <meta name="description" content="Kennel Fidel samlet som en moderne kennel- og bloggforside med nyheter, hundeprofiler, valpeinformasjon og kontakt.">
+    <title>Kennel Fidel | Puddeloppdrett, klipp og utstilling</title>
+    <meta name="description" content="Kennel Fidel presentert som en moderne kennelvirksomhet med puddeloppdrett, hundeklipp, utstillingserfaring, valpeinformasjon og kontakt.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -21,10 +21,12 @@
         </a>
         <nav class="site-nav" aria-label="Hovedmeny">
           <a href="#hjem">Hjem</a>
-          <a href="#nyheter">Nyheter</a>
+          <a href="#tjenester">Tjenester</a>
+          <a href="#aktuelt">Aktuelt</a>
           <a href="#hunder">Våre hunder</a>
           <a href="#valper">Valper</a>
-          <a href="#meritter">Meritter</a>
+          <a href="#meritter">Resultater</a>
+          <a href="#utstillinger">Utstillinger</a>
           <a href="#om">Om</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
@@ -35,91 +37,141 @@
       <section class="hero" id="hjem">
         <div class="shell hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Kennel Fidel</p>
-            <h1>Pudler med lang historie i ring, klipp og oppdrett.</h1>
+            <div class="hero-kicker-row">
+              <p class="eyebrow">Kennelvirksomhet</p>
+              <p class="issue-stamp">Oppdrett / klipp / utstilling</p>
+            </div>
+            <h1>Kennel Fidel</h1>
             <p class="lead">
-              Kennel Fidel ble presentert som et aktivt og personlig kennelnettsted drevet av
-              Eva Nygård og Gro Staurheim, med hunder, valpenytt, utstillingsresultater og
-              mange års erfaring med puddel.
+              Et moderne showcase for en puddelkennel med dokumentert historie, valpearbeid,
+              hundeklipp og utstillingserfaring. Siden skal gjøre det lett å forstå hva
+              kennelen tilbyr, hvem som står bak, og hvordan seriøse henvendelser tas videre.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#nyheter">Se nyheter</a>
+              <a class="button primary" href="#kontakt">Send henvendelse</a>
               <a class="button secondary" href="#kontakt">Kontakt kennelen</a>
             </div>
-            <ul class="hero-facts" aria-label="Hurtigfakta">
-              <li>
-                <strong>118</strong>
-                <span>champions framhevet på forsiden</span>
-              </li>
-              <li>
-                <strong>50+</strong>
-                <span>år med pudler hos Eva Nygård</span>
-              </li>
-              <li>
-                <strong>34</strong>
-                <span>år med Gro Staurheim i kennelen</span>
-              </li>
-            </ul>
+            <div class="hero-ledger" aria-label="Hurtigfakta">
+              <article>
+                <span class="ledger-label">Dokumentert historikk</span>
+                <strong>118 champions</strong>
+                <p>Frontet direkte på den gamle forsiden.</p>
+              </article>
+              <article>
+                <span class="ledger-label">Faglig tyngde</span>
+                <strong>50+ år med pudler</strong>
+                <p>Eva ble omtalt med oppdrett, utstilling og hundefrisering.</p>
+              </article>
+              <article>
+                <span class="ledger-label">To kontaktpunkter</span>
+                <strong>34 år med Gro</strong>
+                <p>Gro ble beskrevet som en fast del av kennelens liv i Bø.</p>
+              </article>
+            </div>
+            <aside class="hero-note">
+              <p class="note-title">For kunder og valpekjøpere</p>
+              <p>
+                Showcase-siden prioriterer tillit, tydelige tjenester og kontaktflyt: valper,
+                hunder, klipp, resultater og hvem som faktisk driver kennelen.
+              </p>
+            </aside>
           </div>
 
           <div class="hero-rail">
-            <figure class="hero-photo">
-              <img src="assets/photos/archive-dog-04.jpg" alt="Lys puddel oppstilt på hundeutstilling">
-            </figure>
-            <article class="latest-card">
-              <p class="card-label">Siste valpenytt</p>
-              <h2>Mellompuddelkull født 21.03.2023</h2>
-              <p>
-                Ett sort tispevalp og to aprikose hannvalper ble oppgitt etter NUCH Fidel
-                Arizona og Tixobambixo's Helmer of Ther-Lia. Ta direkte kontakt for oppdatert
-                status og videre spørsmål.
-              </p>
-              <a class="text-link" href="#valper">Les valpeinformasjon</a>
-            </article>
+            <div class="show-ribbon" aria-hidden="true">Oppdrett / valper / klipp / utstilling</div>
+            <div class="hero-collage" aria-label="Bildecollage fra Kennel Fidel">
+              <figure class="hero-photo hero-photo-main">
+                <img src="assets/photos/archive-dog-04.jpg" alt="Lys puddel oppstilt på hundeutstilling">
+                <figcaption>Utstillingserfaring</figcaption>
+              </figure>
+              <figure class="hero-photo hero-photo-side">
+                <img src="assets/photos/archive-dog-02.jpg" alt="Puddel fotografert i utstillingsoppsett">
+                <figcaption>Kennelprofil</figcaption>
+              </figure>
+              <article class="latest-card">
+                <p class="card-label">Siste valpenytt</p>
+                <h2>Mellompuddelkull født 21.03.2023</h2>
+                <p>
+                  Ett sort tispevalp og to aprikose hannvalper ble oppgitt etter NUCH Fidel
+                  Arizona og Tixobambixo's Helmer of Ther-Lia.
+                </p>
+                <a class="text-link" href="#valper">Se valpeinformasjon</a>
+              </article>
+              <article class="scrap-card">
+                <p class="card-label">Virksomheten</p>
+                <ul>
+                  <li>Puddeloppdrett</li>
+                  <li>Valpehenvendelser</li>
+                  <li>Hundeklipp</li>
+                  <li>Showresultater</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="overview-band">
-        <div class="shell overview-grid">
-          <article>
-            <p class="band-kicker">Kennelblogg</p>
-            <h2>Nytt fra Kennel Fidel</h2>
+      <section class="overview-band" id="tjenester">
+        <div class="shell journal-board">
+          <article class="journal-intro">
+            <p class="band-kicker">Tjenester</p>
+            <h2>Hva Kennel Fidel viser fram</h2>
             <p>
-              Her er hunder, valper, showresultater, hundeklipp og minner samlet slik en
-              moderne kennelblogg kan presentere det: korte saker, tydelige innganger og en
-              varm personlig stemme.
+              Siden bør fungere som et profesjonelt utstillingsvindu for kennelvirksomheten:
+              oppdrett, valpeoppfølging, puddelklipp, showkompetanse og aktive hunder samlet
+              i en tydelig kontaktflate.
             </p>
           </article>
+          <article class="journal-note note-puppies">
+            <span>Oppdrett</span>
+            <strong>Valper til rette hjem</strong>
+            <p>Valpeinnholdet forklarer forventninger, oppfølging og henvendelser.</p>
+          </article>
+          <article class="journal-note note-show">
+            <span>Utstilling</span>
+            <strong>Resultater som bevis</strong>
+            <p>Showhistorikken gir virksomheten troverdighet uten å bli ren resultatliste.</p>
+          </article>
+          <article class="journal-note note-grooming">
+            <span>Pelsstell</span>
+            <strong>Hundeklipp</strong>
+            <p>Klipp beskrives som del av fagmiljøet rundt puddel, ikke bare en bisetning.</p>
+          </article>
           <div class="band-list" aria-label="Temaer fra originalsidene">
-            <span>Valper og kull</span>
-            <span>Utstillingsresultater</span>
-            <span>Våre hunder</span>
-            <span>Hundeklipp</span>
-            <span>Champions</span>
-            <span>Memoriam og opphav</span>
+            <span>Valper</span>
+            <span>Oppdrett</span>
+            <span>Puddelklipp</span>
+            <span>Utstilling</span>
+            <span>Hundeprofiler</span>
+            <span>Kontakt</span>
           </div>
+          <blockquote class="journal-quote">
+            <p>
+              En god kennelnettside må gjøre mer enn å være pen. Den må gi nok tillit til at
+              riktig familie tar kontakt, og feil match lar være.
+            </p>
+          </blockquote>
         </div>
       </section>
 
-      <section class="section shell" id="nyheter">
+      <section class="section shell" id="aktuelt">
         <div class="section-heading">
-          <p class="eyebrow">Nyheter</p>
-          <h2>Utvalgte innlegg</h2>
+          <p class="eyebrow">Aktuelt</p>
+          <h2>For valpekjøpere og kunder</h2>
           <p>
-            Nyhetsstoffet er løftet frem som bloggkort: show, kull, hundeprofiler og små
-            oppdateringer fra kennelens liv.
+            Innholdet brukes som salgsmateriale for virksomheten: det viser aktivitetsnivå,
+            seriøsitet, resultater og hvordan kennelen tenker rundt hundehold.
           </p>
         </div>
 
-        <div class="news-layout">
+        <div class="news-layout editorial-layout">
           <article class="feature-story">
             <figure>
               <img src="assets/photos/archive-dog-02.jpg" alt="Puddel fotografert i utstillingsoppsett">
             </figure>
             <div class="story-body">
               <p class="story-date">27. november 2022</p>
-              <h3>Fidella Starface markerte seg i Sandefjord</h3>
+              <h3>Resultater som bygger tillit</h3>
               <p>
                 I showrapporten fra NKK Sandefjord ble Fidella Starface omtalt som vinnende i
                 intermediate class og 2. beste tispe, mens kullsøster Surprice Starface vant
@@ -131,7 +183,7 @@
           <div class="story-stack">
             <article class="story-card">
               <p class="story-date">27. august 2022</p>
-              <h3>Karri og Kamfer fikk stor plass på NPK Hokksund</h3>
+              <h3>Utstillingserfaring gjennom flere hunder</h3>
               <p>
                 Siden beskrev Tixobambixo Khamfer of El-Zanz som BIR SAR og BIS SAR 2,
                 mens Fidella Starface ble ført fram med BIR junior, BIR og BIS junior 2.
@@ -139,7 +191,7 @@
             </article>
             <article class="story-card">
               <p class="story-date">2023</p>
-              <h3>Valpesiden holdt tonen jordnær og tydelig</h3>
+              <h3>Valpeformidling med tydelige forventninger</h3>
               <p>
                 Kennelen skrev at valper selges til de rette hjemmene, med fokus på mosjon,
                 pelsstell, helseundersøking, miljøtrening og videre hjelp fra oppdretter.
@@ -147,7 +199,7 @@
             </article>
             <article class="story-card">
               <p class="story-date">2022</p>
-              <h3>Planlagt kull med Winona og Peter Pan</h3>
+              <h3>Planlagte kull presentert ryddig</h3>
               <p>
                 "New litters"-siden oppga et ventet mellompuddelkull etter NUCH Fidel Winona
                 og NUCH NJV-21 NORDJV-21 Kimalmo's Peter Pan, omtalt som et kull de gledet seg til.
@@ -158,21 +210,30 @@
 
         <div class="post-grid">
           <article class="post-card">
-            <p class="card-label">Fra oversikten</p>
-            <h3>3. oktober</h3>
-            <p>Nyhetsoversikten viser en oppdatering som sendte leseren videre til dogshows, Karri og Arizona.</p>
+            <span class="post-pin" aria-hidden="true"></span>
+            <p class="card-label">Tillit</p>
+            <h3>Aktive oppdateringer</h3>
+            <p>Nyhetsoversikten viser at hunder, resultater og valpeinformasjon ble holdt samlet og synlig.</p>
           </article>
           <article class="post-card">
-            <p class="card-label">Fra oversikten</p>
-            <h3>23. mai</h3>
-            <p>En samlet oppdatering pekte til dogshows, puppyshows, Nona, Karri og siden for valper til salgs.</p>
+            <span class="post-pin" aria-hidden="true"></span>
+            <p class="card-label">Oppfølging</p>
+            <h3>Flere innganger for kunder</h3>
+            <p>Valper, show, hundeprofiler og klipp må henge sammen for at nye eiere skal forstå helheten.</p>
           </article>
           <article class="post-card">
-            <p class="card-label">Hundeklipp</p>
-            <h3>Hundeklipp som fast del av kennelen</h3>
+            <span class="post-pin" aria-hidden="true"></span>
+            <p class="card-label">Tjeneste</p>
+            <h3>Hundeklipp som del av fagtilbudet</h3>
             <p>Eva beskrev hjemmeklipp for faste kunder og egne puddelfrisyrer, fra lammeklipp til sportskontinental.</p>
           </article>
         </div>
+
+        <aside class="news-ribbon-board" aria-label="Nyhetsnotater">
+          <p>Oppdrett krever tillit før kontakt.</p>
+          <p>Puddelklipp viser praktisk fagkunnskap.</p>
+          <p>Showresultater dokumenterer nivå.</p>
+        </aside>
       </section>
 
       <section class="section shell dogs-section" id="hunder">
@@ -226,22 +287,30 @@
             <p>Gro Staurheims mellomtispe. Hun ble champion på første forsøk etter fylte to år.</p>
           </article>
         </div>
+
+        <div class="dog-ledger" aria-label="Hundesider i originalmenyen">
+          <span>Avlshanner</span>
+          <span>Veteraner</span>
+          <span>Stamtavler</span>
+          <span>Bevegelse</span>
+          <span>Memoriam</span>
+        </div>
       </section>
 
       <section class="section shell puppies-section" id="valper">
         <div class="section-heading">
           <p class="eyebrow">Valper</p>
-          <h2>Valper og henvendelser</h2>
+          <h2>Valper og seriøse henvendelser</h2>
           <p>
-            Valpestoffet er presentert som rolig kennelblogg: hva som er kjent, hva kennelen
-            vektla, og hva nye valpekjøpere bør avklare direkte.
+            Valpesiden skal fungere som en kvalifiserende inngang: hva som er kjent, hva
+            kennelen vektla, og hva nye valpekjøpere bør avklare før de tar kontakt.
           </p>
         </div>
 
         <div class="puppy-grid">
           <article class="puppy-card emphasis">
-            <p class="card-label">Kullnotat</p>
-            <h3>21.03.2023</h3>
+            <p class="card-label">Siste kjente kull</p>
+            <h3>Mellompuddel 21.03.2023</h3>
             <p>
               Mellompuddelkull med en sort tispe og to aprikose hannvalper, oppgitt etter
               NUCH Fidel Arizona og Tixobambixo's Helmer of Ther-Lia.
@@ -249,8 +318,8 @@
           </article>
 
           <article class="puppy-card">
-            <p class="card-label">Kennelens valpefilosofi</p>
-            <h3>Dette la kennelen vekt på</h3>
+            <p class="card-label">Kvalitet</p>
+            <h3>Hva kennelen bør signalisere</h3>
             <p>
               Passende hjem, gode turmuligheter, forståelse for pelsstell, helsesjekk,
               miljøtrening og hjelp med klipp og utstilling for nye eiere.
@@ -258,8 +327,8 @@
           </article>
 
           <article class="puppy-card">
-            <p class="card-label">For henvendelser</p>
-            <h3>Avklar før du spør</h3>
+            <p class="card-label">Kontaktfilter</p>
+            <h3>Avklar før henvendelse</h3>
             <ul>
               <li>Om det finnes aktive eller planlagte kull nå.</li>
               <li>Helseundersøkelser, registrering og kontrakt.</li>
@@ -271,11 +340,11 @@
 
       <section class="section shell merits-section" id="meritter">
         <div class="section-heading">
-          <p class="eyebrow">Meritter</p>
-          <h2>Resultater og høydepunkter</h2>
+          <p class="eyebrow">Resultater</p>
+          <h2>Showcase for erfaring</h2>
           <p>
-            Utstilling og champions var en tydelig del av Kennel Fidel. Her er høydepunktene
-            samlet i en roligere, mer lesbar form.
+            Utstilling og champions er forretningsmessige tillitssignaler her: de viser nivå,
+            kontinuitet og erfaring med rasen.
           </p>
         </div>
 
@@ -301,15 +370,78 @@
             <p>Forsiden frontet Kennel Fidel med tittelen "Kennel Fidel - 118 Champions".</p>
           </article>
         </div>
+        <div class="ribbon-line" aria-label="Utstillingsflyt">
+          <span>Valpeshow</span>
+          <span>Junior</span>
+          <span>BIR</span>
+          <span>Cert</span>
+          <span>Champion</span>
+        </div>
+      </section>
+
+      <section class="section shell shows-section" id="utstillinger">
+        <div class="section-heading">
+          <p class="eyebrow">Utstillinger de deltar på</p>
+          <h2>Møt kennelen rundt ringen</h2>
+          <p>
+            Utstillingene er en praktisk del av kennelvirksomheten: der kan interesserte
+            møte folkene bak kennelen, se hundene presentert i ringen og kontrollere
+            at resultater, aktivitet og rasearbeid henger sammen.
+          </p>
+        </div>
+
+        <div class="showcase-grid" aria-label="Utstillinger fra arkivmaterialet">
+          <article class="showcase-card featured-show">
+            <p class="card-label">Nordisk / NKK</p>
+            <h3>Nord NKK Sandefjord</h3>
+            <p>
+              Arkivsiden "Adult Show Results" omtaler Sandefjord 27. november. Her ble
+              Fidella Starface beskrevet som vinner i intermediate class og 2. beste
+              tispe, mens Surprice Starface vant åpen klasse og tok cert.
+            </p>
+          </article>
+          <article class="showcase-card">
+            <p class="card-label">Norsk Puddelklubb</p>
+            <h3>NPK Hokksund</h3>
+            <p>
+              NPK Hokksund 27/8-22 er listet i showarkivet. Teksten omtaler NPKs
+              hovedutstilling som et godt arrangement med fint vær og hyggelige dommere.
+            </p>
+          </article>
+          <article class="showcase-card">
+            <p class="card-label">Norsk Puddelklubb</p>
+            <h3>NPK Skien</h3>
+            <p>
+              NPK Skien 30. og 31. juli ligger også i showarkivet. Sammen med Hokksund
+              viser det at Puddelklubben er en tydelig arena for kennelens aktivitet.
+            </p>
+          </article>
+        </div>
+
+        <div class="showcase-proof">
+          <article>
+            <span>For valpekjøpere</span>
+            <p>Se hvordan hundene oppfører seg i miljø med dommer, andre hunder og publikum.</p>
+          </article>
+          <article>
+            <span>For kunder</span>
+            <p>Møt Eva og Gro i en faglig setting der pels, bevegelse og rasepreg vurderes.</p>
+          </article>
+          <article>
+            <span>For tillit</span>
+            <p>Aktiv deltakelse gjør championhistorikk og resultater mer etterprøvbare.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section shell about-section" id="om">
         <div class="section-heading">
           <p class="eyebrow">Om kennelen</p>
-          <h2>Eva, Gro og et nettsted med personlig stemme</h2>
+          <h2>Folkene bak virksomheten</h2>
           <p>
             Om oss-siden beskrev kennelen som drevet av Eva Nygård og Gro Staurheim, med
-            en kombinasjon av oppdrett, utstilling, hundefrisering og hverdagsliv med puddel.
+            en kombinasjon av oppdrett, utstilling og hundefrisering. Det er den kompetansen
+            en kennel showcase må få raskt fram.
           </p>
         </div>
 
@@ -327,27 +459,34 @@
             <p>Hundeklipp-siden oppga klipp for faste, utvalgte kunder og et tydelig engasjement for klassiske puddelfrisyrer.</p>
           </article>
         </div>
+        <article class="about-banner">
+          <p class="card-label">Kundeløfte</p>
+          <p>
+            Den beste versjonen av denne siden selger ikke med store ord. Den gjør det enkelt
+            å forstå erfaringen, hundene, kravene og veien til en riktig valpematch.
+          </p>
+        </article>
       </section>
 
       <section class="section shell gallery-section">
         <div class="section-heading">
           <p class="eyebrow">Bilder</p>
-          <h2>Bilder fra kennelens gamle nettside</h2>
-          <p>Bildene brukes som stemningsbærere for kennelstoffet. Der hundenavn ikke er sikkert matchet, holdes bildeteksten generell.</p>
+          <h2>Visuelt bevis på virksomheten</h2>
+          <p>Bildene brukes som kennel- og utstillingsmateriale. Der hundenavn ikke er sikkert matchet, holdes bildeteksten generell.</p>
         </div>
 
         <div class="gallery-grid">
           <figure class="gallery-card">
             <img src="assets/photos/archive-dog-02.jpg" alt="Puddel fra den gamle forsiden">
-            <figcaption>Forsidefoto</figcaption>
+            <figcaption>Kennelprofil</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="assets/photos/archive-dog-03.jpg" alt="Puddel i utstillingsstilling">
-            <figcaption>Utstillingspreg</figcaption>
+            <figcaption>Utstilling</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="assets/photos/archive-dog-04.jpg" alt="Lys puddel på utstilling">
-            <figcaption>Generisk kennelbilde fra forsiden</figcaption>
+            <figcaption>Rasepreg og presentasjon</figcaption>
           </figure>
         </div>
       </section>
@@ -357,8 +496,8 @@
           <p class="eyebrow">Kontakt</p>
           <h2>Kontakt</h2>
           <p>
-            Bruk kontaktpunktene for seriøse spørsmål om hunder, valper, pelsstell og kennelens
-            videre arbeid.
+            Kontaktpunktene skal være tydelige for valper, pelsstell, hunder og videre
+            oppfølging. Oppdatert status bør alltid bekreftes direkte.
           </p>
         </div>
 

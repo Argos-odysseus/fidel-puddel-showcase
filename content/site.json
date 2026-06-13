@@ -1,0 +1,28 @@
+{
+  "siteName": "Kennel Fidel",
+  "siteTagline": "Pudler, utstilling og oppdrett",
+  "heroTitle": "Kennel Fidel",
+  "heroLead": "Et moderne showcase for en puddelkennel med dokumentert historie, valpearbeid, hundeklipp og utstillingserfaring. Siden skal gjøre det lett a forsta hva kennelen tilbyr, hvem som star bak, og hvordan seriose henvendelser tas videre.",
+  "servicesIntro": "Siden bor fungere som et profesjonelt utstillingsvindu for kennelvirksomheten: oppdrett, valpeoppfolging, puddelklipp, showkompetanse og aktive hunder samlet i en tydelig kontaktflate.",
+  "puppiesIntro": "Valpesiden skal fungere som en kvalifiserende inngang: hva som er kjent, hva kennelen vektla, og hva nye valpekjopere bor avklare for de tar kontakt.",
+  "meritsIntro": "Utstilling og champions er forretningsmessige tillitssignaler her: de viser niva, kontinuitet og erfaring med rasen.",
+  "showsIntro": "Utstillingene er en praktisk del av kennelvirksomheten: der kan interesserte mote folkene bak kennelen, se hundene presentert i ringen og kontrollere at resultater, aktivitet og rasearbeid henger sammen.",
+  "aboutIntro": "Om oss-siden beskrev kennelen som drevet av Eva Nygard og Gro Staurheim, med en kombinasjon av oppdrett, utstilling og hundefrisering.",
+  "contactIntro": "Kontaktpunktene skal vaere tydelige for valper, pelsstell, hunder og videre oppfolging. Oppdatert status bor alltid bekreftes direkte.",
+  "contacts": [
+    {
+      "name": "Eva Nygard",
+      "role": "Oppdretter",
+      "location": "Oppegard, Akershus",
+      "email": "fidelpuddel@gmail.com",
+      "phone": "997 41 311"
+    },
+    {
+      "name": "Gro Staurheim",
+      "role": "Meddriver",
+      "location": "Bo, Telemark",
+      "email": "grstau@online.no",
+      "phone": "952 82 035"
+    }
+  ]
+}

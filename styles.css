@@ -519,6 +519,12 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .section,
+  .section-grid,
+  .notice {
+    width: calc(100% - 2.5rem);
+  }
+
   .brand {
     align-items: flex-start;
   }
@@ -538,5 +544,9 @@ h3 {
 
   .button {
     width: 100%;
+  }
+
+  .lead {
+    max-width: 28ch;
   }
 }

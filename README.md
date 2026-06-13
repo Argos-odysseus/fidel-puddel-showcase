@@ -1,6 +1,6 @@
 # Kennel Fidel static showcase
 
-Modernized static reference site for Trym's mother's poodle business, based on the public Wayback Machine snapshot of `fidel-puddel.net`.
+Modernized static kennel/blog concept for Kennel Fidel, rebuilt from the public Wayback Machine snapshot of `fidel-puddel.net`.
 
 Live site: https://argos-odysseus.github.io/fidel-puddel-showcase/
 
@@ -47,6 +47,7 @@ Specific content used in the modern site:
 - Puppy philosophy: sell to suitable homes that meet poodle exercise and grooming needs; breeder helps with grooming, clipping and show guidance; puppies were described as health checked, environmentally trained and used to car trips in a crate.
 - Dog examples: Fidel Face Of A Devil "Bowie", Fidella Starface "Karri", Tixobambixo Khamfer Of El-Zanz, Fidel Zanzibar, Fidel Arizona, Fidel Winona.
 - Results/highlights: Toy of the Year 2018/2019/2020, Crufts qualification, BOB/BIS/SAR references, and extensive champion history.
+- News flow examples from the overview/show pages: Sandefjord 27.11.2022, NPK Hokksund 27.08.2022, the archived 2023 litter note, and the planned Winona/Peter Pan litter note.
 
 ## Recovered assets and limitations
 
@@ -58,7 +59,7 @@ The archive listed many image URLs, including One.com `____impro/1/onewebmedia/.
 
 One larger archived image partially downloaded as corrupt/gray content and is not included in the published repo. Many other images were present in CDX but were not practical to recover within this bounded run because Wayback binary retrieval was slow and intermittently returned timeouts or partial content.
 
-No missing data has been fabricated. Where data may be outdated, the page labels it as archived.
+No missing data has been fabricated. Where data may be outdated, the live page avoids presenting it as current availability and keeps the confirmation caveat subtle in the footer/contact framing.
 
 ## Field research
 
@@ -79,15 +80,16 @@ Design implications:
 - Use clear puppy inquiry guidance instead of a generic contact form.
 - Avoid overexposing private home addresses on a public static site; the demo keeps phone and email prominent and only uses regional location labels.
 - Include static equivalents for dynamic/archive-only features such as guestbook and map.
+- Present the site as a living kennel/blog front page rather than an archive exhibit, while keeping provenance in README/footer.
 
 ## Feature mapping
 
-- Original large side menu -> modern section navigation and summarized site map coverage in README.
-- Original "Til salgs" and "New litters" -> archived puppy information plus current-inquiry checklist.
-- Original dog pages -> scannable dog cards with sourced facts.
-- Original champion/show result pages -> compact timeline and highlights.
-- Original contact form/guestbook -> static contact cards and documented limitation.
-- Original image-heavy pages -> three recovered archived photos plus placeholders where image recovery failed.
+- Original large side menu -> top navigation with `Hjem`, `Nyheter`, `Våre hunder`, `Valper`, `Meritter`, `Om`, and `Kontakt`.
+- Original `Oversikt`, `Dog Shows`, `Puppy Shows`, `Til salgs`, and `New litters` -> a news-led homepage with featured stories and dated update cards.
+- Original dog pages, studs, veterans, and champions -> profile cards and merit blocks on the homepage.
+- Original `Hundeklipp` page -> folded into the about/news sections as part of the kennel identity.
+- Original contact pages -> static contact cards and inquiry guidance, without a fake backend form.
+- Recovered archive photos -> reused as hero, feature-story, dog-profile, and gallery imagery instead of being isolated as archive evidence.
 
 ## Verification
 
@@ -98,9 +100,9 @@ Completed local gates:
 - Recovered image bytes checked with `file`; three usable JPEGs are referenced by the page.
 - `git diff --check -- fidel-puddel-showcase` passed.
 - Local HTTP server returned `200 OK` from `http://127.0.0.1:8877/`.
-- Playwright screenshots captured at `1440x1100` and `390x1200`.
-- Screenshot inspection found no blank page, clipped text, overlapping text or broken layout.
-- Rendered-text sanity check found `Kennel Fidel`, `21.03.2023`, `Fidel Face Of A Devil` and `Kontakt Kennel Fidel`.
+- Browser screenshots captured at desktop and mobile sizes.
+- Screenshot inspection checked for blank page, clipped text, overlapping text and broken layout.
+- Rendered-text sanity check should confirm the blog-style surface text such as `Kennel Fidel`, `Utvalgte innlegg`, `Fidel Face Of A Devil`, and `Kontaktpunkter fra offentlig arkiv`.
 
 Limitations:
 

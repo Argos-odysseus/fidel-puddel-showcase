@@ -3,269 +3,391 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kennel Fidel | Puddeloppdrett</title>
-    <meta name="description" content="Modernisert statisk referanseside for Kennel Fidel, basert på offentlig Wayback-arkiv av fidel-puddel.net.">
+    <title>Kennel Fidel | Nyheter, hunder og valpeinfo</title>
+    <meta name="description" content="Kennel Fidel samlet som en moderne kennel- og bloggforside med nyheter, hundeprofiler, valpeinformasjon og kontakt.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Hopp til innhold</a>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Kennel Fidel forside">
-        <span class="brand-mark">F</span>
-        <span>
-          <strong>Kennel Fidel</strong>
-          <small>Puddeloppdrett og utstilling</small>
-        </span>
-      </a>
-      <nav aria-label="Hovedmeny">
-        <a href="#valper">Valper</a>
-        <a href="#hunder">Hunder</a>
-        <a href="#meritter">Meritter</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
+
+    <header class="site-header" id="top">
+      <div class="shell header-row">
+        <a class="brand" href="#top" aria-label="Kennel Fidel forside">
+          <span class="brand-mark">KF</span>
+          <span class="brand-copy">
+            <strong>Kennel Fidel</strong>
+            <small>Pudler, utstilling og oppdrett</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Hovedmeny">
+          <a href="#hjem">Hjem</a>
+          <a href="#nyheter">Nyheter</a>
+          <a href="#hunder">Våre hunder</a>
+          <a href="#valper">Valper</a>
+          <a href="#meritter">Meritter</a>
+          <a href="#om">Om</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
-      <section id="top" class="hero section-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Basert på arkivet av fidel-puddel.net</p>
-          <h1>Kennel Fidel</h1>
-          <p class="lead">
-            Et langvarig puddeloppdrett med toy, dverg, mellom og storpuddel, drevet av
-            Eva Nygaard og Gro Staurheim. Arkivet beskriver mer enn 50 år med pudler,
-            oppdrett, utstilling og hundefrisering.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#valper">Valpeinformasjon</a>
-            <a class="button secondary" href="#kontakt">Ta kontakt</a>
-          </div>
-          <ul class="quick-facts" aria-label="Nøkkeltall fra arkivet">
-            <li>
-              <strong>118</strong>
-              <span>champions i arkivet</span>
-            </li>
-            <li>
-              <strong>50+</strong>
-              <span>år med pudler</span>
-            </li>
-            <li>
-              <strong>NKK</strong>
-              <span>tilknytning oppgitt i arkivet</span>
-            </li>
-          </ul>
-        </div>
-        <div class="hero-panel" aria-label="Kennel Fidel høydepunkter">
-          <figure class="archive-photo hero-photo">
-            <img src="assets/photos/archive-dog-04.jpg" alt="Arkivfoto av lys puddel oppstilt på hundeutstilling">
-            <figcaption>Arkivfoto hentet fra Wayback-snapshoten</figcaption>
-          </figure>
-          <div class="panel-card">
-            <p class="card-kicker">Arkivert forside</p>
-            <h2>“Kennel Fidel - 118 Champions”</h2>
-            <p>
-              Forsiden fremhevet Fidella Starface, Tixobambixo Khamfer Of El-Zanz og
-              Fidel Face Of A Devil med Crufts-kvalifisering, BOB-resultater og
-              “Toy of the Year” 2018, 2019 og 2020.
+      <section class="hero" id="hjem">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Kennel Fidel</p>
+            <h1>Pudler med lang historie i ring, klipp og oppdrett.</h1>
+            <p class="lead">
+              Kennel Fidel ble presentert som et aktivt og personlig kennelnettsted drevet av
+              Eva Nygaard og Gro Staurheim, med hunder, valpenytt, utstillingsresultater og
+              mange aars erfaring med puddel.
             </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#nyheter">Se nyheter</a>
+              <a class="button secondary" href="#kontakt">Kontakt kennelen</a>
+            </div>
+            <ul class="hero-facts" aria-label="Hurtigfakta">
+              <li>
+                <strong>118</strong>
+                <span>champions framhevet paa forsiden</span>
+              </li>
+              <li>
+                <strong>50+</strong>
+                <span>aar med pudler hos Eva Nygaard</span>
+              </li>
+              <li>
+                <strong>34</strong>
+                <span>aar med Gro Staurheim i kennelen</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-rail">
+            <figure class="hero-photo">
+              <img src="assets/photos/archive-dog-04.jpg" alt="Lys puddel oppstilt paa hundeutstilling">
+            </figure>
+            <article class="latest-card">
+              <p class="card-label">Sist omtalt i arkivet</p>
+              <h2>Mellompuddelkull foedt 21.03.2023</h2>
+              <p>
+                Ett sort tispevalp og to aprikose hannvalper ble oppgitt etter NUCH Fidel
+                Arizona og Tixobambixo's Helmer of Ther-Lia. Dette vises her som historisk
+                kennelstoff, ikke som naavaerende tilgjengelighet.
+              </p>
+              <a class="text-link" href="#valper">Les valpeinformasjon</a>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="notice">
-        <strong>Arkivstatus:</strong>
-        Denne siden er en modernisert statisk demonstrasjon bygget fra Wayback Machine.
-        Valper, kontaktdata og helseresultater må bekreftes direkte med Kennel Fidel før bruk.
-      </section>
-
-      <section id="valper" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Valper og henvendelser</p>
-          <h2>Rolig, tydelig valpeflyt</h2>
-          <p>
-            Den arkiverte siden hadde egne sider for “Til salgs” og “New litters”.
-            Innholdet under bevarer statusen som faktisk lå i arkivet, uten å gjøre den
-            til en nåværende annonsering.
-          </p>
-        </div>
-        <div class="split">
-          <article class="feature-card">
-            <h3>Siste valpeinformasjon funnet i arkivet</h3>
+      <section class="overview-band">
+        <div class="shell overview-grid">
+          <article>
+            <p class="band-kicker">Nyhetsfolelse</p>
+            <h2>Mer som kennelblogg, mindre som oppslagstavle</h2>
             <p>
-              Arkivet oppgir et mellompuddelkull født 21.03.2023: én sort tispe og to
-              aprikose hanner etter NUCH Fidel Arizona og Tixobambixo's Helmer of Ther-Lia.
-            </p>
-            <p>
-              Siden oppga at en hann muligens var ledig, og ba seriøst interesserte kontakte
-              Eva eller Gro. Dette behandles her som historisk arkivinformasjon.
+              Den gamle siden hadde loepende oppdateringer til hunder, valper, showresultater,
+              hundeklipp og memorialsider. Her er det samlet som en moderne forside med
+              lesbare hovedsaker og korte innganger videre.
             </p>
           </article>
-          <article class="checklist-card">
-            <h3>For seriøse henvendelser</h3>
+          <div class="band-list" aria-label="Temaer fra originalsidene">
+            <span>Valper og kull</span>
+            <span>Utstillingsresultater</span>
+            <span>Våre hunder</span>
+            <span>Hundeklipp</span>
+            <span>Champions</span>
+            <span>Memoriam og opphav</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="nyheter">
+        <div class="section-heading">
+          <p class="eyebrow">Nyheter</p>
+          <h2>Utvalgte innlegg fra den gjenfunnede siden</h2>
+          <p>
+            Nyhetsoversikten i arkivet peker paa en side som ble oppdatert over tid med lenker
+            til hunder, kull og show. Her er hovedstoffet omsatt til frontsidekort.
+          </p>
+        </div>
+
+        <div class="news-layout">
+          <article class="feature-story">
+            <figure>
+              <img src="assets/photos/archive-dog-02.jpg" alt="Puddel fotografert i utstillingsoppsett">
+            </figure>
+            <div class="story-body">
+              <p class="story-date">27. november 2022</p>
+              <h3>Fidella Starface markerte seg i Sandefjord</h3>
+              <p>
+                I den arkiverte showrapporten fra NKK Sandefjord ble Fidella Starface omtalt
+                som vinnende i intermediate class og 2. beste tispe, mens kullsoester
+                Surprice Starface vant aapen klasse og tok cert.
+              </p>
+            </div>
+          </article>
+
+          <div class="story-stack">
+            <article class="story-card">
+              <p class="story-date">27. august 2022</p>
+              <h3>Karri og Kamfer fikk stor plass paa NPK Hokksund</h3>
+              <p>
+                Arkivet beskriver Tixobambixo Khamfer of El-Zanz som BIR SAR og BIS SAR 2,
+                mens Fidella Starface ble foert fram med BIR junior, BIR og BIS junior 2.
+              </p>
+            </article>
+            <article class="story-card">
+              <p class="story-date">2023</p>
+              <h3>Valpesiden holdt tonen jordnaer og tydelig</h3>
+              <p>
+                Kennelen skrev at valper selges til de rette hjemmene, med fokus paa mosjon,
+                pelsstell, helseundersoeking, miljoetrening og videre hjelp fra oppdretter.
+              </p>
+            </article>
+            <article class="story-card">
+              <p class="story-date">2022</p>
+              <h3>Planlagt kull med Winona og Peter Pan</h3>
+              <p>
+                "New litters"-siden oppga et ventet mellompuddelkull etter NUCH Fidel Winona
+                og NUCH NJV-21 NORDJV-21 Kimalmo's Peter Pan, omtalt som et kull de gledet seg til.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card">
+            <p class="card-label">Fra oversikten</p>
+            <h3>3. oktober</h3>
+            <p>Nyhetsoversikten viser en oppdatering som sendte leseren videre til dogshows, Karri og Arizona.</p>
+          </article>
+          <article class="post-card">
+            <p class="card-label">Fra oversikten</p>
+            <h3>23. mai</h3>
+            <p>En samlet oppdatering pekte til dogshows, puppyshows, Nona, Karri og siden for valper til salgs.</p>
+          </article>
+          <article class="post-card">
+            <p class="card-label">Hundeklipp</p>
+            <h3>Hundeklipp som fast del av kennelen</h3>
+            <p>Eva beskrev hjemmeklipp for faste kunder og egne puddelfrisyrer, fra lammeklipp til sportskontinental.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell dogs-section" id="hunder">
+        <div class="section-heading">
+          <p class="eyebrow">Våre hunder</p>
+          <h2>Profiler fra hundesidene</h2>
+          <p>
+            Originalmenyen hadde egne sider for aktive hunder, veteraner, avlshanner,
+            stamtavler, movement og memoriam. Frontsiden under trekker fram noen navn som gikk igjen.
+          </p>
+        </div>
+
+        <div class="dog-grid">
+          <article class="dog-card dog-card-photo">
+            <figure>
+              <img src="assets/photos/archive-dog-03.jpg" alt="Puddel fotografert paa utstilling">
+            </figure>
+            <div class="dog-copy">
+              <h3>Fidel Face Of A Devil "Bowie"</h3>
+              <p>Brun toy hann. Arkivet oppgir Int Nord Ch, PRCD A, patella normal og Toy of the Year i 2018, 2019 og 2020.</p>
+            </div>
+          </article>
+
+          <article class="dog-card">
+            <div class="dog-badge">Toy</div>
+            <h3>Fidella Starface "Karri"</h3>
+            <p>Brun toy tispe foedt 19.05.2021. Arkivet kobler henne til Crufts-kvalifisering og flere BIR-resultater.</p>
+          </article>
+
+          <article class="dog-card">
+            <div class="dog-badge">Mellom</div>
+            <h3>Tixobambixo Khamfer Of El-Zanz</h3>
+            <p>Aprikos hann paa 40 cm. Arkivet oppgir HD A-A, kne 0-0, PRCD A og flere BIS SAR-resultater.</p>
+          </article>
+
+          <article class="dog-card">
+            <div class="dog-badge">Stud</div>
+            <h3>Fidel Zanzibar</h3>
+            <p>Multichampion mellompuddel. Avlshannsiden oppgir 41 cm, HD A-A, AD 0-0, kne 0-0 og PRCD B.</p>
+          </article>
+
+          <article class="dog-card">
+            <div class="dog-badge">Mor til kull</div>
+            <h3>Fidel Arizona</h3>
+            <p>NUCH og oppgitt som mor til kullet arkivert 21.03.2023, etter Tixobambixo Khamfer Of El-Zanz og Icefly Fidel Almeria.</p>
+          </article>
+
+          <article class="dog-card">
+            <div class="dog-badge">Boe</div>
+            <h3>Fidel Winona</h3>
+            <p>Gro Staurheims mellomtispe. Championsiden sier at hun ble champion paa foerste forsoek etter fylte to aar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell puppies-section" id="valper">
+        <div class="section-heading">
+          <p class="eyebrow">Valper</p>
+          <h2>Historisk valpeinfo, presentert som en trygg kontaktflate</h2>
+          <p>
+            Den gamle siden hadde egne flater for "Til salgs" og "New litters". Her er stoffet
+            presentert som arkivert kennelinfo med tydelig oppfordring om a bekrefte status direkte.
+          </p>
+        </div>
+
+        <div class="puppy-grid">
+          <article class="puppy-card emphasis">
+            <p class="card-label">Arkivert kull</p>
+            <h3>21.03.2023</h3>
+            <p>
+              Mellompuddelkull med en sort tispe og to aprikose hannvalper, oppgitt etter
+              NUCH Fidel Arizona og Tixobambixo's Helmer of Ther-Lia.
+            </p>
+          </article>
+
+          <article class="puppy-card">
+            <p class="card-label">Kennelens egen tekst</p>
+            <h3>Hva kennelen la vekt paa</h3>
+            <p>
+              Passende hjem, gode turmuligheter, forstaaelse for pelsstell, helsesjekk,
+              miljoetrening og hjelp med klipp og utstilling for nye eiere.
+            </p>
+          </article>
+
+          <article class="puppy-card">
+            <p class="card-label">For henvendelser</p>
+            <h3>Hva det er verdt aa avklare</h3>
             <ul>
-              <li>Fortell om hjem, hverdag, turmuligheter og erfaring med hund.</li>
-              <li>Bekreft at du forstår puddelens pelsstell og behov for aktivitet.</li>
-              <li>Spør om dokumenterte helseundersøkelser, registrering, kontrakt og oppfølging.</li>
-              <li>Avklar om det finnes planlagte eller aktuelle kull nå.</li>
+              <li>Om det finnes aktive eller planlagte kull naa.</li>
+              <li>Helseundersoekelser, registrering og kontrakt.</li>
+              <li>Forventninger til aktivitet, pelsstell og oppfoelging.</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="hunder" class="section muted">
+      <section class="section shell merits-section" id="meritter">
         <div class="section-heading">
-          <p class="eyebrow">Våre hunder</p>
-          <h2>Hunder, avlshanner og veteraner</h2>
+          <p class="eyebrow">Meritter</p>
+          <h2>Resultater som bar den gamle siden</h2>
           <p>
-            Den opprinnelige siden hadde et stort sidekart med egne sider for aktive hunder,
-            veteraner, opphav, champions, memoriam og stamtavler.
+            Utstillingssidene var en viktig del av identiteten til Kennel Fidel. Her er noen
+            gjentakende hovedspor samlet i en mer lesbar oversikt.
           </p>
         </div>
-        <div class="dog-grid">
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Fidel Face Of A Devil “Bowie”</h3>
-            <p>Brun toy hann, PRCD A, patella normal. Arkivet oppgir Int Nord Ch og Toy of the Year 2018, 2019 og 2020.</p>
+
+        <div class="merit-grid">
+          <article class="merit-card">
+            <span>2018-2020</span>
+            <h3>Toy of the Year</h3>
+            <p>Fidel Face Of A Devil ble oppgitt som Toy of the Year tre aar paa rad.</p>
           </article>
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Fidella Starface “Karri”</h3>
-            <p>Brun toy tispe født 19.05.2021. Arkivet oppgir Crufts-kvalifisering og flere BIR-resultater.</p>
+          <article class="merit-card">
+            <span>2022</span>
+            <h3>Karri paa vei opp</h3>
+            <p>Fidella Starface ble omtalt med Crufts-kvalifisering, BIR-resultater og sterk plassering i Sandefjord.</p>
           </article>
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Tixobambixo Khamfer Of El-Zanz</h3>
-            <p>Aprikos mellom hann, 40 cm. Arkivet oppgir HD A-A, knær 0-0, PRCD A og flere BIS SAR-resultater.</p>
+          <article class="merit-card">
+            <span>2008-2022</span>
+            <h3>Championhistorikk</h3>
+            <p>Championsidene og listen over champions viser en lang rekke norske, nordiske og internasjonale titler.</p>
           </article>
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Fidel Zanzibar</h3>
-            <p>Multichampion mellompuddel. Avlshannsiden oppgir 41 cm, HD A-A, AD 0-0, knær 0-0 og PRCD B.</p>
-          </article>
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Fidel Arizona</h3>
-            <p>NUCH, mor til kullet arkivert 21.03.2023. Foreldre oppgitt som Tixobambixo Khamfer Of El-Zanz og Icefly Fidel Almeria.</p>
-          </article>
-          <article class="dog-card">
-            <div class="photo-placeholder"></div>
-            <h3>Fidel Winona</h3>
-            <p>Champion på første forsøk etter fylte to år ifølge championsiden. Eier og oppdretter oppgitt som Gro Staurheim.</p>
+          <article class="merit-card">
+            <span>Forsiden</span>
+            <h3>118 champions</h3>
+            <p>Den arkiverte forsiden frontet Kennel Fidel med tittelen "Kennel Fidel - 118 Champions".</p>
           </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section shell about-section" id="om">
+        <div class="section-heading">
+          <p class="eyebrow">Om kennelen</p>
+          <h2>Eva, Gro og et nettsted med personlig stemme</h2>
+          <p>
+            Om oss-siden beskrev kennelen som drevet av Eva Nygaard og Gro Staurheim, med
+            en kombinasjon av oppdrett, utstilling, hundefrisering og hverdagsliv med puddel.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Eva Nygaard</h3>
+            <p>Arkivet sier at Eva hadde vaert aktiv med pudler i over 50 aar gjennom oppdrett, utstilling og hundefrisering.</p>
+          </article>
+          <article class="about-card">
+            <h3>Gro Staurheim</h3>
+            <p>Gro beskrives som en del av kennelen i 34 aar og som medeier paa flere pudler, med base i Boe i Telemark.</p>
+          </article>
+          <article class="about-card">
+            <h3>Hundeklipp hjemme</h3>
+            <p>Hundeklipp-siden oppga klipp for faste, utvalgte kunder og et tydelig engasjement for klassiske puddelfrisyrer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell gallery-section">
         <div class="section-heading">
           <p class="eyebrow">Arkivbilder</p>
-          <h2>Tre foto kunne caches</h2>
-          <p>
-            Disse bildene kom fra Wayback-forsiden. De vises som generiske arkivbilder,
-            ikke som sikker identifikasjon av hundene i kortene over.
-          </p>
+          <h2>Noen foto lot seg hente tilbake</h2>
+          <p>Bildene brukes her som stemningsbaerere for kennelstoffet, uten a tilskrive sikre hundenavn der matchen er uklar.</p>
         </div>
+
         <div class="gallery-grid">
-          <figure class="archive-photo">
-            <img src="assets/photos/archive-dog-02.jpg" alt="Arkivfoto av puddel oppstilt på hundeutstilling">
-            <figcaption>Arkivfoto fra forsiden</figcaption>
+          <figure class="gallery-card">
+            <img src="assets/photos/archive-dog-02.jpg" alt="Arkivfoto av puddel fra den opprinnelige forsiden">
+            <figcaption>Forsidefoto fra Wayback</figcaption>
           </figure>
-          <figure class="archive-photo">
-            <img src="assets/photos/archive-dog-03.jpg" alt="Arkivfoto av puddel oppstilt på hundeutstilling">
-            <figcaption>Arkivfoto fra forsiden</figcaption>
+          <figure class="gallery-card">
+            <img src="assets/photos/archive-dog-03.jpg" alt="Arkivfoto av puddel i utstillingsstilling">
+            <figcaption>Utstillingspreg fra arkivet</figcaption>
           </figure>
-          <figure class="archive-photo">
-            <img src="assets/photos/archive-dog-04.jpg" alt="Arkivfoto av puddel oppstilt på hundeutstilling">
-            <figcaption>Arkivfoto fra forsiden</figcaption>
+          <figure class="gallery-card">
+            <img src="assets/photos/archive-dog-04.jpg" alt="Arkivfoto av lys puddel paa utstilling">
+            <figcaption>Generisk kennelbilde fra forsiden</figcaption>
           </figure>
         </div>
       </section>
 
-      <section id="meritter" class="section">
+      <section class="section shell contact-section" id="kontakt">
         <div class="section-heading">
-          <p class="eyebrow">Resultater og historikk</p>
-          <h2>Utstilling først, men lettere å skanne</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <time>2023</time>
-            <h3>Arkivert valpekull</h3>
-            <p>Mellompuddelkull født 21.03.2023 etter NUCH Fidel Arizona og Tixobambixo's Helmer of Ther-Lia.</p>
-          </article>
-          <article>
-            <time>2020</time>
-            <h3>Top poodles in Norway</h3>
-            <p>Arkivet oppgir LPI Fidel Bernette, Tixobambixo Khamfer Of El-Zanz og Fidel Face Of A Devil blant årets topphunder.</p>
-          </article>
-          <article>
-            <time>2018-2020</time>
-            <h3>Toy of the Year</h3>
-            <p>Fidel Face Of A Devil ble oppført som Toy of the Year tre år på rad.</p>
-          </article>
-          <article>
-            <time>2008-2022</time>
-            <h3>Championarkiv</h3>
-            <p>Championsiden viser et langt historisk arkiv med norske, nordiske og internasjonale titler.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section muted">
-        <div class="section-heading">
-          <p class="eyebrow">Ansvarlig oppdrett</p>
-          <h2>Moderne tillitssignaler</h2>
-          <p>
-            Dette er struktur for hva en oppdatert kennel-side bør gjøre lett å finne.
-            Punktene er basert på NKK, Norsk Puddelklubb og Mattilsynet.
-          </p>
-        </div>
-        <div class="trust-grid">
-          <article>
-            <h3>Helse og dokumentasjon</h3>
-            <p>Oppgi relevante resultater som øyelysing, patella, PRCD-PRA og HD/AD der det er relevant for størrelse og kombinasjon.</p>
-          </article>
-          <article>
-            <h3>Registrering og kontrakt</h3>
-            <p>Gjør det tydelig hvordan valper registreres, leveres og hvilken kjøpeavtale som brukes.</p>
-          </article>
-          <article>
-            <h3>Miljø og oppfølging</h3>
-            <p>Beskriv sosialisering, biltur/burtrening, pelsstellopplæring og videre kontakt etter levering.</p>
-          </article>
-          <article>
-            <h3>Personvern</h3>
-            <p>Bruk telefon og e-post til kontakt, men vær varsom med private hjemmeadresser på en offentlig statisk side.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="kontakt" class="section contact-section">
-        <div>
           <p class="eyebrow">Kontakt</p>
-          <h2>Kontakt Kennel Fidel</h2>
+          <h2>Kontaktpunkter fra offentlig arkiv</h2>
           <p>
-            Kontaktinformasjonen under er hentet fra offentlig arkiv. Bekreft alltid at den
-            fortsatt er riktig før publisering på en reell produksjonsside.
+            Kontaktdataene under er hentet fra de offentlige arkivsider som ble brukt til denne
+            moderniserte forsiden. Status og detaljer maa bekreftes direkte ved bruk.
           </p>
         </div>
-        <div class="contact-cards">
+
+        <div class="contact-grid">
           <article class="contact-card">
             <h3>Eva Nygaard</h3>
-            <p>Oppegård, Akershus</p>
+            <p>Oppegaard, Akershus</p>
             <a href="mailto:fidelpuddel@gmail.com">fidelpuddel@gmail.com</a>
             <a href="tel:+4799741311">997 41 311</a>
           </article>
           <article class="contact-card">
             <h3>Gro Staurheim</h3>
-            <p>Bø, Telemark</p>
+            <p>Boe, Telemark</p>
             <a href="mailto:grstau@online.no">grstau@online.no</a>
             <a href="tel:+4795282035">952 82 035</a>
+          </article>
+          <article class="contact-card inquiry-card">
+            <h3>Ved valpehenvendelser</h3>
+            <p>Fortell gjerne om hjem, erfaring med hund, aktivitetsnivaa og hvordan pelsstell er tenkt loest i hverdagen.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Modernisert statisk referanseside for Kennel Fidel. Ikke en offisiell bekreftet driftsside.</p>
-      <a href="https://web.archive.org/web/20240420101610/https://www.fidel-puddel.net/">Original Wayback-snapshot</a>
+      <div class="shell footer-row">
+        <p>Modernisert konsept basert paa offentlig arkiv av fidel-puddel.net. Detaljer maa bekreftes.</p>
+        <a href="https://web.archive.org/web/20240420101610/https://www.fidel-puddel.net/">Wayback-kilde</a>
+      </div>
     </footer>
   </body>
 </html>
